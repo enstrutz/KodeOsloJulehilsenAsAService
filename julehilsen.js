@@ -106,8 +106,11 @@ function julehilsen() {
     "koronafritt",
   ];
 
-  let randomAdjektiv1 = Math.random(adjektiv1.length);
-  let randomAdjektiv2 = adjektiv2[0];
+  let randomAdjektiv1 =
+    adjektiv1[Math.floor(Math.random(adjektiv1.length) * adjektiv1.length)];
+
+  let randomAdjektiv2 =
+    adjektiv2[Math.floor(Math.random(adjektiv2.length) * adjektiv2.length)];
 
   let julehilsenTekst =
     "Vi ønsker deg en " +
