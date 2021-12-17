@@ -65,7 +65,7 @@ function generate() {
   // set CSS-styles from generated strings
 
   document.getElementById("body").style.background = gradient;
-  document.getElementById("rgb-text").innerHTML = gradientCode;
+  document.getElementById("rgb-text").innerHTML = julehilsen();
   document.getElementById("instruction").innerHTML = instruction;
   document.getElementById("instruction").style.color = "#9a8297";
 }
@@ -94,7 +94,7 @@ function julehilsen() {
     "fabelaktig",
     "amazing",
     "helt sjukt nice",
-    "Flott",
+    "flott",
   ];
   let adjektiv2 = [
     "godt",
@@ -105,9 +105,8 @@ function julehilsen() {
     "megasosialt",
     "koronafritt",
   ];
-  let rndAdjNumber1 = Math.floor(Math.random() * adjektiv1.length);
 
-  let randomAdjektiv1 = adjektiv1[0];
+  let randomAdjektiv1 = Math.random(adjektiv1.length);
   let randomAdjektiv2 = adjektiv2[0];
 
   let julehilsenTekst =
@@ -116,6 +115,7 @@ function julehilsen() {
     " jul og et " +
     randomAdjektiv2 +
     " nytt år! Hilsen Kode Oslo-gjengen.";
+  console.log(randomAdjektiv1);
 
   return julehilsenTekst;
 }
