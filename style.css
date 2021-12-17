@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  heigh: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg,rgba(188,170,130,1) 0%,   rgba(231,202,212,1)0%, rgba(104,207,232,1) 100%);
+
+! -- background: linear-gradient(90deg,rgba(138,83,196,1) 0%, rgba(72,160,245,1)0%, rgba(227,75,84,1) 100%);--!  
+
+} 
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem; 
+  
+ 
+}
+
+.svg{
+  border: 1px solid black;
+}
+
+.btn {
+  width: 28rem;
+  min-height: 7rem;
+  border-radius: 20px;
+  border: 0;
+  background-color: #023047;
+  color: white;
+  letter-spacing: 2px;
+  cursor: pointer; 
+}
+.btn:hover {
+  background-color: #219ebc;
+}
+.textbox {
+  width: 70rem;
+  height: 30%;
+  background-color: lightgrey;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.textbox:hover{
+  opacity: 0.7;
+  cursor: copy;
+  
+}
+.text-wrapper{
+  height: 50%; 
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 2rem;
+}
+
+.text, .text-code p {
+  font-family: "Courier Prime", monospace;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.text-code p, .instruction {
+  font-family: "Courier Prime", monospace;
+  color: grey;
+  font-size: 1.2rem;
+}
+
+.code{
+  width: 100%;
+  padding: 1rem 0 0 0;
+}
+
