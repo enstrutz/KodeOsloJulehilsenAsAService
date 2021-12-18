@@ -59,14 +59,12 @@ function generate() {
   // define text to be displayed in text box
 
   let gradientCode = "background: " + gradient + ";";
-  let instruction =
-    "Lyst på en til? Bare forsyn deg! Klikk i vinduet for å kopiere teksten.";
 
   // set CSS-styles from generated strings
 
   document.getElementById("body").style.background = gradient;
   document.getElementById("rgb-text").innerHTML = julehilsen();
-  document.getElementById("instruction").innerHTML = instruction;
+  /*   document.getElementById("instruction").innerHTML = instruction; */
   document.getElementById("instruction").style.color = "#9a8297";
 }
 
@@ -80,7 +78,9 @@ function copyCssCode() {
   ];
   let i = Math.floor(Math.random() * 5);
   let gradientCssCode = document.getElementById("rgb-text").innerHTML;
-  let copyConfirmation = preWord[i] + "Denne er kopiert og klar for gjenbruk!";
+  let copyConfirmation =
+    preWord[i] +
+    "Denne er kopiert. Lim den inn i en mail og send den til en venn.";
 
   navigator.clipboard.writeText(gradientCssCode);
   document.getElementById("instruction").innerHTML = copyConfirmation;
@@ -95,15 +95,20 @@ function julehilsen() {
     "amazing",
     "helt sjukt nice",
     "flott",
+    "fredelig",
+    "vellyket",
+    "koselig",
   ];
   let adjektiv2 = [
     "godt",
     "herlig",
-    "fantastic",
+    "*fantastic*",
     "über-amazing",
     "innholdsrikt",
     "megasosialt",
     "koronafritt",
+    "drøyt fett",
+    "helt normalt",
   ];
 
   let randomAdjektiv1 =
