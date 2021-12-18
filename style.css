@@ -65,23 +65,21 @@ body {
 
 .textbox {
   width: 70rem;
-  height: 30%;
+  height: 30rem;
   background-color: lightgrey;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
-.textbox:hover {
+/* .textbox:hover {
   opacity: 0.7;
   cursor: copy;
-}
+} */
 .text-wrapper {
-  height: 50%;
-  width: 90%;
-  margin: auto;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 0 0 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .text,

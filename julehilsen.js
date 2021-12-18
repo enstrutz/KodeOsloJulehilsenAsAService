@@ -78,9 +78,9 @@ function copyCssCode() {
   ];
   let i = Math.floor(Math.random() * 5);
   let gradientCssCode = document.getElementById("rgb-text").innerHTML;
-  let copyConfirmation =
+  /*   let copyConfirmation =
     preWord[i] +
-    "Denne er kopiert. Lim den inn i en mail og send den til en venn.";
+    "Denne er kopiert. Lim den inn i en mail og send den til en venn."; */
 
   navigator.clipboard.writeText(gradientCssCode);
   document.getElementById("instruction").innerHTML = copyConfirmation;
