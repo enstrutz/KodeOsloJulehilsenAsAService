@@ -76,7 +76,8 @@ body {
   cursor: copy;
 } */
 .text-wrapper {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +100,7 @@ body {
   width: 100%;
   padding: 1rem 0 0 0;
 }
-@media only screen and (min-device-width: 100px) and (max-device-width: 500px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+@media only screen and (min-device-width: 100px) and (max-device-width: 500px) {
   body {
     width: 100vw;
     height: 100vh;
