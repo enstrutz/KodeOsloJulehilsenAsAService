@@ -2,32 +2,55 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
+
 html {
   font-size: 62.5%;
+  max-width: 100vw;
+  touch-action: manipulation;
 }
 body {
-  width: 100vw;
+  max-width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  touch-action: manipulation;
+
   background: linear-gradient(
     90deg,
-    rgba(188, 170, 130, 1) 0%,
+    rgb(69, 60, 41) 0%,
     rgba(231, 202, 212, 1) 0%,
     rgba(104, 207, 232, 1) 100%
   );
 }
 .wrapper {
-  height: 100vh;
-  width: 100%;
+  height: 100%;
+  max-width: 100vw;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.julelogo {
+  width: 60rem;
+  touch-action: manipulation;
+}
+
+.ko-logo {
+  /*   width: 1rem; */
+  margin: 4rem 0 0 0;
+  touch-action: manipulation;
 }
 
 .link {
@@ -35,10 +58,6 @@ body {
   color: grey;
   letter-spacing: 2px;
   font-size: 1.5rem;
-}
-
-.svg {
-  border: 1px solid black;
 }
 
 .btn {
@@ -64,7 +83,7 @@ body {
 }
 
 .textbox {
-  width: 70rem;
+  width: 80rem;
   height: 30rem;
   background-color: lightgrey;
   border-radius: 10px;
@@ -89,7 +108,6 @@ body {
 
 #instruction {
   font-family: "Courier Prime", monospace;
-
   font-size: 1.2rem;
 }
 
@@ -97,75 +115,77 @@ body {
   width: 100%;
   padding: 1rem 0 0 0;
 }
-@media only screen and (min-device-width: 100px) and (max-device-width: 500px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    background-color: grey;
-    overflow: hidden;
-    position: fixed;
-  }
 
-  h2 {
-    font-family: "Courier Prime", monospace;
-    color: dark-grey;
-    font-size: 4rem;
+@media (min-device-width: 100px) and (max-device-width: 600px) {
+  html {
+    font-size: 62.5%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .wrapper {
-    height: 90rem;
-    width: 90%;
-    margin: auto;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
-    padding: 60rem 0 0 0;
+    justify-content: flex-start;
   }
+
   .logo {
-    padding: 0 0 0 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  #logoText {
-    height: 60rem;
-    width: 60rem;
+  .julelogo {
+    max-width: 100%;
+    height: 15rem;
+    touch-action: manipulation;
+  }
+
+  .ko-logo {
+    max-width: 100%;
+    width: 20rem;
+    touch-action: manipulation;
   }
 
   .btn {
-    width: 100%;
-    min-height: 13rem;
+    margin: 5rem 0 5rem 0;
+    width: 80%;
+    min-height: 7rem;
     border-radius: 20px;
     border: 0;
     background-color: #023047;
     color: white;
     letter-spacing: 2px;
     cursor: pointer;
-    font-size: 3rem;
-    margin: 10rem 0 10rem 0;
+    font-size: 1.5rem;
   }
   .btn:hover {
-    color: white;
+    color: #ffffff;
   }
   .btn:active {
-    color: #ffffff;
+    background-color: #ffffff;
   }
-  .btn:visited {
-    color: #ffffff;
+  .btn-text {
+    font-size: 3rem;
   }
+
   .textbox {
-    width: 100%;
-    min-height: 50rem;
-    background-color: rgb(52, 48, 48, 1);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
+    width: 80%;
+    height: 20rem;
   }
-  .textbox:hover {
-    opacity: 1;
-    cursor: copy;
+
+  .text-wrapper {
+    height: 10rem;
   }
-  .text {
+
+  .text,
+  .text-code p {
     font-family: "Courier Prime", monospace;
-    color: #9a8297;
-    font-size: 4rem;
+    color: dark-grey;
+    font-size: 1.5rem;
   }
 }

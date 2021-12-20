@@ -66,7 +66,7 @@ function generate() {
   document.getElementById("body").style.background = gradient;
   document.getElementById("rgb-text").innerHTML = julehilsen();
   /*   document.getElementById("instruction").innerHTML = instruction; */
-  document.getElementById("instruction").style.color = "#9a8297";
+  /*   document.getElementById("instruction").style.color = "#9a8297"; */
 }
 
 function copyCssCode() {
