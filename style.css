@@ -55,9 +55,17 @@ body {
 
 .link {
   font-family: Arial, Helvetica, sans-serif;
-  color: grey;
+  color: rgb(70, 70, 70);
   letter-spacing: 2px;
   font-size: 1.5rem;
+  padding: 2rem 0 0 0;
+}
+
+.link:visited {
+  color: rgb(70, 70, 70);
+}
+.link:hover {
+  color: #95e9fe;
 }
 
 .btn {
