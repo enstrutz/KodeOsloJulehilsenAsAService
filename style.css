@@ -116,6 +116,45 @@ body {
   padding: 1rem 0 0 0;
 }
 
+#snowflake1 {
+  animation: rotasjon 14s infinite;
+  animation-timing-function: linear;
+  transform: rotate(45deg) rotate(-45deg);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+#snowflake2 {
+  animation: rotasjon2 16s infinite;
+  animation-timing-function: linear;
+  transform: rotate(45deg) rotate(-45deg);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+#snowflake3 {
+  animation: rotasjon 11s infinite;
+  animation-timing-function: linear;
+  transform: rotate(45deg) rotate(-45deg);
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes rotasjon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotasjon2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
 @media (min-device-width: 100px) and (max-device-width: 600px) {
   html {
     font-size: 62.5%;
@@ -140,6 +179,7 @@ body {
     flex-direction: column;
   }
   .julelogo {
+    margin: 4rem 0 0 0;
     max-width: 100%;
     height: 15rem;
     touch-action: manipulation;
