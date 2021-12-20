@@ -1,7 +1,6 @@
 //event listeners
 
 document.getElementById("knapp").addEventListener("click", generate);
-document.getElementById("textbox").addEventListener("click", copyCssCode);
 
 // random gradient function
 
@@ -99,6 +98,7 @@ function julehilsen() {
     "fredelig",
     "vellyket",
     "koselig",
+    "gjennomførbar",
   ];
   let adjektiv2 = [
     "godt",
