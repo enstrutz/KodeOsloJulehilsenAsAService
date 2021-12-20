@@ -7,9 +7,10 @@ document.getElementById("textbox").addEventListener("click", copyCssCode);
 
 function rndList(length) {
   let list = [];
+  let min = 40;
 
   for (let i = 0; i <= length - 1; i++) {
-    list.push(Math.floor(Math.random() * 255));
+    list.push(Math.floor(Math.random() * 255 + min));
   }
   return list;
 }
@@ -110,6 +111,19 @@ function julehilsen() {
     "drøyt fett",
     "helt normalt",
   ];
+  let emoji = [
+    "🎅",
+    "🤶",
+    "🦌",
+    "🍪",
+    "🌟",
+    "☃️",
+    "❄️",
+    "🎄",
+    "🎁",
+    "🧦",
+    "🕯️",
+  ];
 
   let randomAdjektiv1 =
     adjektiv1[Math.floor(Math.random(adjektiv1.length) * adjektiv1.length)];
@@ -117,13 +131,22 @@ function julehilsen() {
   let randomAdjektiv2 =
     adjektiv2[Math.floor(Math.random(adjektiv2.length) * adjektiv2.length)];
 
+  let randomEmoji1 =
+    emoji[Math.floor(Math.random(emoji.length) * emoji.length)];
+  let randomEmoji2 =
+    emoji[Math.floor(Math.random(emoji.length) * emoji.length)];
+  let randomEmoji3 =
+    emoji[Math.floor(Math.random(emoji.length) * emoji.length)];
+
   let julehilsenTekst =
     "Vi ønsker deg en " +
     randomAdjektiv1 +
     " jul og et " +
     randomAdjektiv2 +
-    " nytt år! Hilsen Kode Oslo-gjengen.";
-  console.log(randomAdjektiv1);
+    " nytt år! Hilsen Kode Oslo-gjengen. " +
+    randomEmoji1 +
+    randomEmoji2 +
+    randomEmoji3;
 
   return julehilsenTekst;
 }
